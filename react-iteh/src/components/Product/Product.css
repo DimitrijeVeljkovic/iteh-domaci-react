@@ -13,6 +13,9 @@
 .product-item:hover {
   background-color: beige;
   cursor: pointer;
+  transform: translate(-2px, -2px);
+  box-shadow: 5px 5px 5px rgba(128, 128, 128, 0.5);
+  border: 3px solid beige;
 }
 
 .product-img {
