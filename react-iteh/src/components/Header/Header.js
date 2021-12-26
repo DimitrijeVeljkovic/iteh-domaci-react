@@ -9,7 +9,7 @@ export default function Header(props){
             <Link to="/products"> Products </Link>
         </div>
         <div className='nav-item'>
-            <Link to="/shopping-cart"> Shopping Cart <span>{count}</span> </Link>
+            <Link to="/shopping-cart"> Shopping Cart </Link>
         </div>
     </div>
 }
