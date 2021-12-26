@@ -1,14 +1,15 @@
 import React from 'react';
+import { Link, Router } from 'react-router-dom';
 import './Header.css';
 
 export default function Header(props){
-    return <div className='header'>
+    return  <div className='header'>
         <p className='heading'>LapShop</p>
         <div className='nav-item'>
-            <a href='#'> Products </a>
+            <Link to="/products"> Products </Link>
         </div>
         <div className='nav-item'>
-            <a href='#'> Shopping Cart </a>
+            <Link to="/shopping-cart"> Shopping Cart </Link>
         </div>
     </div>
 }
