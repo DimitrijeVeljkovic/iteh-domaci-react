@@ -20,16 +20,17 @@ export default function ProductDetailsForm(props) {
         const color = document.getElementById('colors').value;
         if(amount.match(/^[1-9]+$/) && checked()){
             const product = data.findProduct(id);
+
             data.cart.push({
+                id: data.idCart++,
                 name: product.name,
                 model: product.model,
                 ram: checked(),
                 color: color,
-                amount: amount
+                amount: amount,
+                price: product.price,
+                total: amount * product.price
             });
-
-            console.log(data.cart);
-            // console.log("Amount: " + amount + ", Ram: " + checked() + ", Color: " + color);
         }else{
             alert('Invalid input. Please try again.')
         }

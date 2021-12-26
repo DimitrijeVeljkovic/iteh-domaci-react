@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './Header.css';
 
@@ -9,7 +9,7 @@ export default function Header(props){
             <Link to="/products"> Products </Link>
         </div>
         <div className='nav-item'>
-            <Link to="/shopping-cart"> Shopping Cart </Link>
+            <Link to="/shopping-cart"> Shopping Cart <span>{count}</span> </Link>
         </div>
     </div>
 }

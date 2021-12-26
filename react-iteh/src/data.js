@@ -43,6 +43,8 @@ const data = {
             image: 'http://www.ctshop.rs//img/products/2020-11-03/asus-zenbook-pro-duo-ux581lv-h2002r-laptop-intel-hexa-core-i7-10750h-15-6-quot-uhd-16gb-1tb-ssd-geforce-rtx2060-win10-pro-plavi_AJJjE_3.jpg'
         },
     ],
+    
+    idCart: 0,
 
     cart: [],
 

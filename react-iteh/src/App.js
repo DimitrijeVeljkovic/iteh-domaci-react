@@ -13,7 +13,7 @@ import {
 } from "react-router-dom";
 
 function App() {
-  const { products } = data;
+  const { products, cart } = data;
 
   return (
     <div className="App">
@@ -23,7 +23,7 @@ function App() {
         <Routes>
             <Route path='/products' element={<ProductList products={products}/>} />
             <Route path='/products/:id' element={<ProductDetails/>} />
-            <Route path='/shopping-cart' element={<Cart/>} />
+            <Route path='/shopping-cart' element={<Cart cart={cart}/>} />
             <Route path='/' element={<ProductList products={products}/>} />
         </Routes>
 
