@@ -19,7 +19,7 @@ const data = {
             name: 'Lenovo',
             model: 'Ideapad 3',
             price: 800,
-            image: 'https://www.tehnomedia.rs/products/68359_huge_0_cached.jpg'
+            image: 'https://img.ep-cdn.com/images/500/500/dm/dmdzkmsnxjslhlbkbamn.jpg'
         },
         {
             id: 4,
@@ -33,7 +33,7 @@ const data = {
             name: 'HP',
             model: 'Pavilion',
             price: 600,
-            image: 'http://www.ctshop.rs//product/img/laptopovi/hp-pavilion-15-cw1024nm6ph46ealaptop-15-6fhd-amd-ryzen-7-3700u-8gb-1tb-128gb-ssd-radeon-vega-10-srebrni-3-cell/normal/71257011_7891991574.jpg'
+            image: 'https://img.gigatron.rs/img/products/large/HP-Pavilion-15-eh0005nm-A3150U-31X82EA-99.png'
         },
         {
             id: 6,
