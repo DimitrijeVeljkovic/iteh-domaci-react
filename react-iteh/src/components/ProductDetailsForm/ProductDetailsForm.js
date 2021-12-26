@@ -18,7 +18,7 @@ export default function ProductDetailsForm(props) {
     const validate = () => {
         const amount = document.getElementById('amount').value;
         const color = document.getElementById('colors').value;
-        if(amount.match(/^[1-9]+$/) && checked()){
+        if(amount.match(/^[1-9][0-9]*$/) && checked()){
             const product = data.findProduct(id);
 
             data.cart.push({
@@ -31,6 +31,8 @@ export default function ProductDetailsForm(props) {
                 price: product.price,
                 total: amount * product.price
             });
+
+            console.log(data.cart);
         }else{
             alert('Invalid input. Please try again.')
         }

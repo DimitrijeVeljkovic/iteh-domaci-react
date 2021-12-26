@@ -1,11 +1,17 @@
 import React from 'react';
 import './CartItem.css'
+import data from '../../data';
 
 export default function CartItem(props) {
     const {cartItem} = props;
 
+    const removeItem = (cartItem) => {
+        data.cart.splice(data.cart.indexOf(cartItem), 1);
+        document.getElementById(cartItem.id).style.display = 'none';
+    }
+
     return (
-        <div className='cart-item'>
+        <div className='cart-item' id={cartItem.id}>
             <div>
                 <p>{cartItem.name}</p>
             </div>
@@ -28,7 +34,7 @@ export default function CartItem(props) {
                 <p>{cartItem.total}</p>
             </div>
             <div>
-                <button>AA</button>
+                <button onClick={()=>removeItem(cartItem)}>Remove</button>
             </div>
         </div>
     )

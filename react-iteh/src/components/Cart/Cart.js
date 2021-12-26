@@ -25,10 +25,10 @@ export default function Cart(props) {
                     <strong>Amount</strong>
                 </div>
                 <div>
-                    <strong>Price</strong>
+                    <strong>Price ($)</strong>
                 </div>
                 <div>
-                    <strong>Total</strong>
+                    <strong>Total ($)</strong>
                 </div>
             </div>
             {cart.map((cartItem) => (
